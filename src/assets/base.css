@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  list-style-type: none;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+}
+@font-face {
+  font-family: Muller;
+  src: url(./fonts/Muller-Trial-Heavy.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: Muller;
+  src: url(./fonts/Muller-Trial-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Muller;
+  src: url(./fonts/Muller-Trial-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Muller;
+  src: url(./fonts/Muller-Trial-Black.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Muller;
+  src: url(./fonts/Muller-Trial-Bold.ttf);
+  font-weight: 700;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  font-family: Muller, sans-serif;
+  color: #f6f6f6;
+  font-weight: 400;
+  font-size: 15px;
+  background: #111010;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.title {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 107%;
+  text-align: center;
+  color: #e8e8e9;
+  margin-bottom: 64px;
+}
+a:hover {
+  opacity: 70%;
+}
