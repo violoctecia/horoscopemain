@@ -57,6 +57,27 @@ body {
   color: #e8e8e9;
   margin-bottom: 64px;
 }
-a:hover {
-  opacity: 70%;
+:root {
+  --dark-select: #1b1d1f;
+  --dark-select-80: #494a4c;
+  --dark-select-60: #767779;
+  --dark-select-40: #a4a5a5;
+  --dark-select-20: #d1d2d2;
+  --dark-select-10: #e8e8e9;
+  --white: #f6f6f6;
+  --dark-main: #111010;
+  --dark-main-80: #414040;
+  --dark-main-60: #707070;
+  --dark-main-20: #cfcfcf;
+  --dark-main-40: #a09f9f;
+  --yellow: #ffeb61;
+  --yellow-80: #ffef81;
+  --yellow-60: #fff3a0;
+  --yellow-40: #fff7c0;
+  --yellow-20: #fffbdf;
+  --yellow-10: #fffdef;
+}
+body.menu-active {
+  overflow: hidden;
+  height: 100vh;
 }
