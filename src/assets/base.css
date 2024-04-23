@@ -78,6 +78,5 @@ body {
   --yellow-10: #fffdef;
 }
 body.menu-active {
-  overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
 }

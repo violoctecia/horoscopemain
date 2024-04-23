@@ -48,13 +48,14 @@
   background: #111010;
 
   h1 {
-    font-weight: 900;
+    font-weight: 800;
     font-size: 40px;
     line-height: 110%;
     color: var(--dark-select-10);
   }
   .date {
     display: flex;
+    align-items: center;
     gap: 24px;
 
     p {
@@ -84,7 +85,7 @@
   }
 }
 .text_wrapper {
-  padding: 52px 75px 88px 75px;
+  padding: 52px 48px 88px 48px;
 
   display: flex;
   flex-direction: column;
@@ -109,5 +110,52 @@ h2 {
   line-height: 133%;
   color: var(--dark-select-10);
   max-width: 620px;
+}
+
+@media (max-width: 1050px) {
+  .text_wrapper {
+    padding: 40px 0 104px 0;
+    gap: 8px;
+    max-width: 500px;
+  }
+  .main_text {
+    img {
+      right: 0;
+      bottom: -60px;
+      z-index: -1;
+      width: 238px;
+      height: 174px;
+    }
+  }
+  .main_card {
+    border-radius: 16px;
+    padding: 24px;
+    h1 {
+      font-size: 24px;
+      line-height: 117%;
+    }
+    .date {
+      p {
+        font-size: 15px;
+        line-height: 160%;
+      }
+    }
+    p {
+      font-size: 15px;
+      line-height: 160%;
+    }
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 119%;
+    span {
+      font-size: 32px;
+      line-height: 119%;
+    }
+  }
+  h2 {
+    font-size: 17px;
+    line-height: 153%;
+  }
 }
 </style>

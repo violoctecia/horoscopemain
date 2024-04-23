@@ -166,7 +166,6 @@ header .container {
 }
 nav {
   width: 100%;
-  padding: 0 25px;
 
   ul {
     display: flex;
@@ -250,7 +249,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: #111010;
     padding: 93px 24px 0 24px;
     z-index: 10;
