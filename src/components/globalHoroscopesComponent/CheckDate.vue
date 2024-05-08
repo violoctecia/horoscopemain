@@ -28,23 +28,23 @@ const hideDateInput = () => {
 };
 
 const handleInput = () => {
-  // Очищаем введенные символы, оставляя только цифры
+
   let cleanedValue = inputValue.value.replace(/\D/g, '');
 
-  // Добавляем разделители после первых двух символов (дня) и после следующих двух символов (месяца)
+
   if (cleanedValue.length > 2) {
     cleanedValue = cleanedValue.slice(0, 2) + ' - ' + cleanedValue.slice(2);
   }
 
-  // Добавляем разделитель перед годом
+
   if (cleanedValue.length > 7) {
     cleanedValue = cleanedValue.slice(0, 7) + ' - ' + cleanedValue.slice(7);
   }
 
-  // Обновляем значение в поле ввода
+
   inputValue.value = cleanedValue;
 
-  // Удаляем пробелы из строки даты и сохраняем значение в переменной date
+
   date.value = cleanedValue.replace(/\s+/g, '');
 };
 

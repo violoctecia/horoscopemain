@@ -12,7 +12,6 @@ import icon9 from "@/assets/svg_zodiacs/9.vue";
 import icon10 from "@/assets/svg_zodiacs/10.vue";
 import icon11 from "@/assets/svg_zodiacs/11.vue";
 import icon12 from "@/assets/svg_zodiacs/12.vue";
-import {defineProps} from "vue";
 import SocialLinks from "@/components/globalComponents/SocialLinks.vue";
 
 const props = defineProps({

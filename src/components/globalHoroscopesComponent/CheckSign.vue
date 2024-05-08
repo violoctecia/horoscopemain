@@ -13,7 +13,7 @@ const props = defineProps({
 const router = useRouter();
 const activeSign = ref(null);
 
-// Следим за изменениями параметра 'sign' в URL-адресе и обновляем активный знак
+
 watch(
     () => router.currentRoute.value.params.sign,
     (newSign) => {

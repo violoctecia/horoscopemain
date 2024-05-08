@@ -1,17 +1,15 @@
 <script setup>
 import {ref} from 'vue';
-import {defineProps} from 'vue';
 
-// Определение пропсов
 const props = defineProps({
   sign: String,
   signsData: Array,
 });
 
-// Создание ссылки на массив знаков
+
 const signsData = ref(props.signsData);
 
-// Функция для поиска знака по его русскому названию
+
 const findSignByRussianName = (signName) => {
   return signsData.value.find(sign => sign.ru === signName);
 };

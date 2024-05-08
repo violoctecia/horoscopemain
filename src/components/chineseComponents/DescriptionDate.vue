@@ -94,12 +94,12 @@ const signElementNames = {
     'Дерево': 'Деревянной Свиньи'
   }
 };
-// Функция для получения полного названия знака с учетом стихии
+
 const getFullSignName = (sign, element) => {
   if (signElementNames.hasOwnProperty(sign) && signElementNames[sign].hasOwnProperty(element)) {
     return signElementNames[sign][element];
   } else {
-    return `${element} ${sign}`; // Возвращаем простое название, если соответствие не найдено
+    return `${element} ${sign}`;
   }
 };
 </script>
