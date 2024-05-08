@@ -12,7 +12,7 @@
             Гороскоп на каждый день: узнай, что приготовили для тебя звёзды
           </h2>
         </div>
-        <img src="../assets/images/mobile_menu.svg" alt="" />
+        <img src="@/assets/images/main_illustration.svg" alt="" />
       </div>
       <div class="main_card">
         <h1>Лунный гороскоп на сегодня</h1>
@@ -33,9 +33,6 @@
 </template>
 
 <style scoped>
-.main {
-  overflow: hidden;
-}
 .main_card {
   display: flex;
   flex-direction: column;
@@ -77,11 +74,9 @@
 
   img {
     position: absolute;
-    right: -90px;
-    bottom: -118px;
     z-index: -1;
-    width: 464px;
-    height: 339px;
+    bottom: -100px;
+    max-width: 100%;
   }
 }
 .text_wrapper {
@@ -118,15 +113,7 @@ h2 {
     gap: 8px;
     max-width: 500px;
   }
-  .main_text {
-    img {
-      right: 0;
-      bottom: -60px;
-      z-index: -1;
-      width: 238px;
-      height: 174px;
-    }
-  }
+
   .main_card {
     border-radius: 16px;
     padding: 24px;
@@ -156,6 +143,13 @@ h2 {
   h2 {
     font-size: 17px;
     line-height: 153%;
+  }
+}
+@media (max-width: 800px) {
+  .main_text {
+    img {
+      bottom: -20px;
+    }
   }
 }
 </style>

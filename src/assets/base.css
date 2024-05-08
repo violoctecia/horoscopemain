@@ -9,56 +9,10 @@
   text-decoration: none;
   border: 0;
   outline: 0;
-}
-@font-face {
-  font-family: Muller;
-  src: url(./fonts/Muller-Trial-Heavy.ttf);
-  font-weight: 900;
-}
-@font-face {
-  font-family: Muller;
-  src: url(./fonts/Muller-Trial-Medium.ttf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: Muller;
-  src: url(./fonts/Muller-Trial-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: Muller;
-  src: url(./fonts/Muller-Trial-Black.ttf);
-  font-weight: 800;
-}
-@font-face {
-  font-family: Muller;
-  src: url(./fonts/Muller-Trial-Bold.ttf);
-  font-weight: 700;
-}
-
-body {
-  min-height: 100vh;
-  line-height: 1.6;
-  font-family: Muller, sans-serif;
-  color: #f6f6f6;
-  font-weight: 400;
-  font-size: 15px;
-  background: #111010;
-
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.title {
-  font-weight: 900;
-  font-size: 56px;
-  line-height: 107%;
-  text-align: center;
-  color: #e8e8e9;
-  margin-bottom: 64px;
+  transition: color 0.2s ease-out;
 }
 :root {
-  --dark-select: #1b1d1f;
+  --dark-select: rgb(27, 29, 31);
   --dark-select-80: #494a4c;
   --dark-select-60: #767779;
   --dark-select-40: #a4a5a5;
@@ -77,6 +31,143 @@ body {
   --yellow-20: #fffbdf;
   --yellow-10: #fffdef;
 }
-body.menu-active {
+
+@font-face {
+  font-family: Muller;
+  src: url(./fonts/Muller-Trial-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Muller;
+  src: url(./fonts/Muller-Trial-Medium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Muller;
+  src: url(./fonts/Muller-Trial-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Muller;
+  src: url(./fonts/Muller-Trial-Black.woff2);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url(./fonts/Muller-Trial-Heavy.woff2);
+  font-weight: 900;
+}
+
+body {
   min-height: 100vh;
+  line-height: 1.6;
+  font-family: 'Muller', sans-serif;
+  color: #f6f6f6;
+  font-weight: 400;
+  font-size: 15px;
+  background: #111010;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: Muller, sans-serif;
+  cursor: pointer;
+}
+.error {
+  color: red;
+}
+.container {
+  max-width: 1056px;
+  margin: 0 auto;
+}
+#app.menu-active {
+  height: 100vh;
+  overflow: hidden;
+}
+a,
+nav ul li a {
+  transition: color 0.2s ease;
+}
+a:hover {
+  cursor: pointer;
+  color: var(--yellow) !important;
+  button {
+    opacity: 1;
+  }
+  svg path {
+    fill: var(--yellow) !important;
+  }
+}
+
+nav ul li a:hover {
+  color: var(--yellow) !important;
+}
+.btn_hover:hover {
+  box-shadow: 0 6px 24px 0 rgba(255, 237, 116, 0.24);
+  background: var(--yellow-80) !important;
+}
+section {
+  margin-bottom: 96px;
+}
+.title {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 107%;
+  text-align: center;
+  color: var(--dark-select-10);
+  margin: 0;
+}
+.desc {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 147%;
+  color: var(--dark-select-20);
+}
+.page_title {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 107%;
+  text-align: center;
+  color: var(--yellow);
+  margin-bottom: 24px;
+}
+.page_desc {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 147%;
+  text-align: center;
+  color: var(--dark-select-20);
+  max-width: 720px;
+}
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 24px;
+  }
+  .title {
+    font-size: 26px;
+    line-height: 115%;
+    text-align: start;
+  }
+  .desc {
+    font-size: 17px;
+    line-height: 153%;
+  }
+  .page_title {
+    font-size: 32px;
+    line-height: 119%;
+    color: var(--yellow-80);
+    margin-bottom: 16px;
+  }
+  .page_desc {
+    font-size: 15px;
+    line-height: 160%;
+    text-align: start;
+  }
+  section {
+    margin-bottom: 40px;
+  }
 }
